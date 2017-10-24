@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Result_Management_System
@@ -27,9 +20,16 @@ namespace Result_Management_System
             string username = userNameTextBox.Text;
             string password = passwordTextBox.Text;
 
-            if (String.IsNullOrEmpty(username) && String.IsNullOrEmpty(password))
+            if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Username/Password is empty", "Warning");
+            }
+            else
+            {
+                AdminArea adminArea = new AdminArea();
+                adminArea.Show();
+
+                Close();
             }
         }
     }

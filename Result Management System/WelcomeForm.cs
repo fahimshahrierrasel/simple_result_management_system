@@ -30,7 +30,7 @@ namespace Result_Management_System
         private void OpenLoginForm()
         {
             UserLogin userLoginForm = new UserLogin();
-            userLoginForm.ShowDialog();
+            userLoginForm.Show();
         }
     }
 }
