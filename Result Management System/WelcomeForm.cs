@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Result_Management_System
 {
-    public partial class Form1 : Form
+    public partial class WelcomeForm : Form
     {
-        public Form1()
+        public WelcomeForm()
         {
             InitializeComponent();
         }
