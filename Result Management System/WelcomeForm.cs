@@ -16,5 +16,21 @@ namespace Result_Management_System
         {
             InitializeComponent();
         }
+
+        private void AdminLoginButton_Click(object sender, EventArgs e)
+        {
+            OpenLoginForm();
+        }
+
+        private void FacultyLoginButton_Click(object sender, EventArgs e)
+        {
+            OpenLoginForm();
+        }
+
+        private void OpenLoginForm()
+        {
+            UserLogin userLoginForm = new UserLogin();
+            userLoginForm.ShowDialog();
+        }
     }
 }
