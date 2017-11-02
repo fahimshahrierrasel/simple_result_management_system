@@ -51,6 +51,7 @@
     <Compile Include="AdminArea.Designer.cs">
       <DependentUpon>AdminArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="FacultyArea.cs">
       <SubType>Form</SubType>
     </Compile>

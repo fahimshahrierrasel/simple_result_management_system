@@ -33,8 +33,8 @@
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.FormLoginButton = new System.Windows.Forms.Button();
-            this.FormCancelButton = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,35 +85,35 @@
             this.label3.Text = "Admin / Faculty Login";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // FormLoginButton
+            // LoginButton
             // 
-            this.FormLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormLoginButton.Location = new System.Drawing.Point(295, 217);
-            this.FormLoginButton.Name = "FormLoginButton";
-            this.FormLoginButton.Size = new System.Drawing.Size(77, 32);
-            this.FormLoginButton.TabIndex = 5;
-            this.FormLoginButton.Text = "Login";
-            this.FormLoginButton.UseVisualStyleBackColor = true;
-            this.FormLoginButton.Click += new System.EventHandler(this.FormLoginButton_Click);
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Location = new System.Drawing.Point(295, 217);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(77, 32);
+            this.LoginButton.TabIndex = 5;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.FormLoginButton_Click);
             // 
-            // FormCancelButton
+            // CancelButton
             // 
-            this.FormCancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormCancelButton.Location = new System.Drawing.Point(212, 217);
-            this.FormCancelButton.Name = "FormCancelButton";
-            this.FormCancelButton.Size = new System.Drawing.Size(77, 32);
-            this.FormCancelButton.TabIndex = 6;
-            this.FormCancelButton.Text = "Cancel";
-            this.FormCancelButton.UseVisualStyleBackColor = true;
-            this.FormCancelButton.Click += new System.EventHandler(this.FormCancelButton_Click);
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(212, 217);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(77, 32);
+            this.CancelButton.TabIndex = 6;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.FormCancelButton_Click);
             // 
             // UserLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 261);
-            this.Controls.Add(this.FormCancelButton);
-            this.Controls.Add(this.FormLoginButton);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.userNameTextBox);
@@ -135,7 +135,7 @@
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button FormLoginButton;
-        private System.Windows.Forms.Button FormCancelButton;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Button CancelButton;
     }
 }
