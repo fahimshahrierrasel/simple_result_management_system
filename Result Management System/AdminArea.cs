@@ -28,5 +28,11 @@ namespace Result_Management_System
             FacultyRegistration facultyRegistrationForm = new FacultyRegistration();
             facultyRegistrationForm.ShowDialog();
         }
+
+        private void AddSectionButton_Click(object sender, EventArgs e)
+        {
+            AddSectionForm addSectionForm = new AddSectionForm();
+            addSectionForm.ShowDialog();
+        }
     }
 }

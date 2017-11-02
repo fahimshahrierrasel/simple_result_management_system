@@ -45,13 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSectionForm.Designer.cs">
+      <DependentUpon>AddSectionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminArea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminArea.Designer.cs">
       <DependentUpon>AdminArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="RMSController.cs" />
+    <Compile Include="Course.cs" />
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Faculty.cs" />
     <Compile Include="FacultyArea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddSectionForm.resx">
+      <DependentUpon>AddSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminArea.resx">
       <DependentUpon>AdminArea.cs</DependentUpon>
     </EmbeddedResource>
