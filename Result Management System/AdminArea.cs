@@ -22,5 +22,11 @@ namespace Result_Management_System
         {
 
         }
+
+        private void FacultyRegistraion_Click(object sender, EventArgs e)
+        {
+            FacultyRegistration facultyRegistrationForm = new FacultyRegistration();
+            facultyRegistrationForm.ShowDialog();
+        }
     }
 }
