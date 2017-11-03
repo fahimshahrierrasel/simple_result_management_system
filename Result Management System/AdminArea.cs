@@ -34,5 +34,11 @@ namespace Result_Management_System
             AddSectionForm addSectionForm = new AddSectionForm();
             addSectionForm.ShowDialog();
         }
+
+        private void StudentSectionButton_Click(object sender, EventArgs e)
+        {
+            AddSectionStudentForm addSectionStudentForm = new AddSectionStudentForm();
+            addSectionStudentForm.ShowDialog();
+        }
     }
 }

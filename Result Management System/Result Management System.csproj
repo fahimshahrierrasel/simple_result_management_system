@@ -51,6 +51,12 @@
     <Compile Include="AddSectionForm.Designer.cs">
       <DependentUpon>AddSectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSectionStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSectionStudentForm.Designer.cs">
+      <DependentUpon>AddSectionStudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminArea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,8 @@
     <Compile Include="FacultyRegistration.Designer.cs">
       <DependentUpon>FacultyRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddSectionForm.resx">
       <DependentUpon>AddSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSectionStudentForm.resx">
+      <DependentUpon>AddSectionStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminArea.resx">
       <DependentUpon>AdminArea.cs</DependentUpon>

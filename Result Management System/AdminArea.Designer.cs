@@ -64,6 +64,7 @@
             this.StudentSectionButton.TabIndex = 2;
             this.StudentSectionButton.Text = "Add Student To Section";
             this.StudentSectionButton.UseVisualStyleBackColor = true;
+            this.StudentSectionButton.Click += new System.EventHandler(this.StudentSectionButton_Click);
             // 
             // AdminArea
             // 

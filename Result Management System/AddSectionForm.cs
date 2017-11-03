@@ -67,18 +67,18 @@ namespace Result_Management_System
 
         private bool AddSectionToDatabase(int courseId, int facultyId, int sectionNumber)
         {
-            DatabaseConnection dbConnection = new DatabaseConnection();
+            DatabaseConnection databaseConnection = new DatabaseConnection();
             try
             {
-                dbConnection.Cmd.CommandText =
+                databaseConnection.Cmd.CommandText =
                     "Insert into Section (section_no, faculty_id, course_id) Values(@SecNo, @FacID, @CrsID)";
-                dbConnection.Cmd.Parameters.Add("@CrsID", SqlDbType.Int).Value = courseId;
-                dbConnection.Cmd.Parameters.Add("@FacID", SqlDbType.Int).Value = facultyId;
-                dbConnection.Cmd.Parameters.Add("@SecNo", SqlDbType.Int).Value = sectionNumber;
-                dbConnection.Con.Open();
-                dbConnection.Cmd.ExecuteNonQuery();
+                databaseConnection.Cmd.Parameters.Add("@CrsID", SqlDbType.Int).Value = courseId;
+                databaseConnection.Cmd.Parameters.Add("@FacID", SqlDbType.Int).Value = facultyId;
+                databaseConnection.Cmd.Parameters.Add("@SecNo", SqlDbType.Int).Value = sectionNumber;
+                databaseConnection.Con.Open();
+                databaseConnection.Cmd.ExecuteNonQuery();
 
-                dbConnection.ClearCommandText();
+                databaseConnection.ClearCommandText();
             }
             catch (Exception exception)
             {
@@ -87,7 +87,7 @@ namespace Result_Management_System
             }
             finally
             {
-                dbConnection.Con.Close();
+                databaseConnection.Con.Close();
             }
             return true;
         }
