@@ -32,7 +32,9 @@ namespace Result_Management_System
         {
             if (SectionSelectionComboBox.SelectedIndex >= 0)
             {
-                MessageBox.Show(SectionSelectionComboBox.SelectedIndex.ToString());
+                int sectioId = sections[SectionSelectionComboBox.SelectedIndex].section_id;
+                ResultSubmissionForm resultSubmissionForm = new ResultSubmissionForm(sectioId);
+                resultSubmissionForm.ShowDialog();
             }
             else
             {
@@ -76,7 +78,7 @@ namespace Result_Management_System
         private List<Section> GetAllSections(int facultyId)
         {
             DatabaseConnection databaseConnection = new DatabaseConnection();
-            databaseConnection.Cmd.CommandText = "Select section_id, section_no, Faculty.initial as faculty, Course.course_code as course From Section, Faculty, Course Where Section.faculty_id = @FacultyId and Section.course_id = Course.course_id";
+            databaseConnection.Cmd.CommandText = "Select section_id, section_no, Faculty.initial as faculty, Course.course_code as course From Section, Faculty, Course Where Section.faculty_id = Faculty.faculty_id and Section.course_id = Course.course_id and Section.faculty_id = @FacultyId";
             databaseConnection.Cmd.Parameters.Add("@FacultyId", SqlDbType.Int).Value = facultyId;
             databaseConnection.Con.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(databaseConnection.Cmd);

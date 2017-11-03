@@ -63,6 +63,12 @@
     <Compile Include="AdminArea.Designer.cs">
       <DependentUpon>AdminArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultSubmissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultSubmissionForm.Designer.cs">
+      <DependentUpon>ResultSubmissionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="RMSController.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="DatabaseConnection.cs" />
@@ -80,6 +86,7 @@
       <DependentUpon>FacultyRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Section.cs" />
+    <Compile Include="SectionStudent.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="UserLogin.cs">
       <SubType>Form</SubType>
@@ -119,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResultSubmissionForm.resx">
+      <DependentUpon>ResultSubmissionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
