@@ -9,6 +9,7 @@ namespace Result_Management_System
     public partial class UserLogin : Form
     {
         private DatabaseConnection databaseConnection;
+        private string Username;
         public UserLogin()
         {
             InitializeComponent();
@@ -42,7 +43,7 @@ namespace Result_Management_System
                 }
                 else if (loginType.Equals("Faculty"))
                 {
-                    FacultyArea facultyArea = new FacultyArea();
+                    FacultyArea facultyArea = new FacultyArea(Username);
                     facultyArea.Show();
                     Close();
                 }
@@ -59,7 +60,7 @@ namespace Result_Management_System
             string loginType = "None";
             try
             {
-                databaseConnection.Cmd.CommandText = "Select top 1 type from RMUser where username = @UserName and pass = @Password";
+                databaseConnection.Cmd.CommandText = "Select top 1 type, username from RMUser where username = @UserName and pass = @Password";
                 databaseConnection.Cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = username;
                 databaseConnection.Cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = password;
 
@@ -75,6 +76,7 @@ namespace Result_Management_System
                 if (stroageTable.Rows.Count == 1)
                 {
                     loginType = stroageTable.Rows[0]["type"].ToString();
+                    Username = stroageTable.Rows[0]["username"].ToString();
                 }
                 
                 databaseConnection.ClearCommandText();
