@@ -32,5 +32,11 @@ namespace Result_Management_System
             UserLogin userLoginForm = new UserLogin();
             userLoginForm.Show();
         }
+
+        private void ResultButton_Click(object sender, EventArgs e)
+        {
+            ResultForm resultForm = new ResultForm();
+            resultForm.ShowDialog();
+        }
     }
 }

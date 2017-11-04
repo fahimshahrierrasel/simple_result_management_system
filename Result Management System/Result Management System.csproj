@@ -63,6 +63,12 @@
     <Compile Include="AdminArea.Designer.cs">
       <DependentUpon>AdminArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResultSubmissionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResultSubmissionForm.resx">
       <DependentUpon>ResultSubmissionForm.cs</DependentUpon>
     </EmbeddedResource>
