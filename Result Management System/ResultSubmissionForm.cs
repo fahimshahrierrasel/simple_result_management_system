@@ -41,8 +41,8 @@ namespace Result_Management_System
             this.Controls.Add(studentIdLabel);
             this.Controls.Add(studentResultLabel);
 
-            studentLabels = new Label[50];
-            studentResult = new ComboBox[50];
+            studentLabels = new Label[allStudents.Count];
+            studentResult = new ComboBox[allStudents.Count];
             int i = 0;
             int space = 0;
 
