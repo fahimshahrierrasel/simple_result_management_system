@@ -91,6 +91,7 @@
             this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "WelcomeForm";
             this.Text = "Result Management System";
+            this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

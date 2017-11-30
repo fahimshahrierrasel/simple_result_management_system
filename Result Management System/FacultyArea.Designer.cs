@@ -56,6 +56,7 @@
             this.FacultyName.TabIndex = 1;
             this.FacultyName.Text = "A Really Really Big Name";
             this.FacultyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.FacultyName.Click += new System.EventHandler(this.FacultyName_Click);
             // 
             // FacultyDepartment
             // 

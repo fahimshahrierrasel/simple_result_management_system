@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Result_Management_System
@@ -35,12 +29,12 @@ namespace Result_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("No information found", "Warning");
+                    MessageBox.Show(@"No information found", @"Warning");
                 }
             }
             else
             {
-                MessageBox.Show("Please add studnet id first", "Warning");
+                MessageBox.Show(@"Please add studnet id first", @"Warning");
             }
         }
 

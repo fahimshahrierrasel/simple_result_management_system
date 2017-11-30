@@ -16,11 +16,22 @@ namespace Result_Management_System
             databaseConnection = new DatabaseConnection();
         }
 
+        /// <summary>
+        /// Form will close if Cancel clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCancelButton_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        
+        /// <summary>
+        /// Form submission
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormLoginButton_Click(object sender, EventArgs e)
         {
             LoginButton.Enabled = false;
@@ -87,6 +98,11 @@ namespace Result_Management_System
                 MessageBox.Show(exception.Message);
             }
             return loginType;
+        }
+
+        private void UserLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

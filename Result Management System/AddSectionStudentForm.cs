@@ -22,11 +22,11 @@ namespace Result_Management_System
         {
             foreach (Section section in sections)
             {
-                SectionComboBox.Items.Add($"{section.section_no}-{section.course}-{section.faculty}");
+                SectionComboBox.Items.Add(String.Format("{0}-{1}-{2}", section.section_no, section.course, section.faculty));
             }
             foreach (Student student in allStudents)
             {
-                StudentComboBox.Items.Add($"{student.student_id}-{student.name}-{student.department}");
+                StudentComboBox.Items.Add(String.Format("{0}-{1}-{2}", student.student_id, student.name, student.department));
             }
         }
 

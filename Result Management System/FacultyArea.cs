@@ -23,7 +23,7 @@ namespace Result_Management_System
             sections = GetAllSections(facultyId);
             foreach (Section section in sections)
             {
-                SectionSelectionComboBox.Items.Add($"{section.course}-{section.section_no}");
+                SectionSelectionComboBox.Items.Add(String.Format("{0}-{1}", section.course, section.section_no));
             }
             
         }
@@ -103,5 +103,9 @@ namespace Result_Management_System
             return allSections;
         }
 
+        private void FacultyName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

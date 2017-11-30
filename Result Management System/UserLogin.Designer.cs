@@ -123,6 +123,7 @@
             this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "UserLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.UserLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

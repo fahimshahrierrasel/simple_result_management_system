@@ -133,7 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StudentIdTextBox);
             this.Name = "ResultForm";
-            this.Text = "ResultForm";
+            this.Text = "Student Result";
             ((System.ComponentModel.ISupportInitialize)(this.ResultView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
